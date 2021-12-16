@@ -48,8 +48,8 @@ public class LoginActivity extends AppCompatActivity {
                 // EditText에 현재 입력되어있는 값을 get(가져온다)해온다.
                 String userID = et_id.getText().toString();
                 String userPass = et_pwd.getText().toString();
-
-                Response.Listener<String> responseListener = new Response.Listener<String>() {
+                Intent intent = new Intent(LoginActivity.this, ContentActivity.class);
+                /*Response.Listener<String> responseListener = new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
                         try {
@@ -77,7 +77,7 @@ public class LoginActivity extends AppCompatActivity {
                 };
                 LoginRequest loginRequest = new LoginRequest(userID, userPass, responseListener);
                 RequestQueue queue = Volley.newRequestQueue(LoginActivity.this);
-                queue.add(loginRequest);
+                queue.add(loginRequest);*/
             }
         });
 

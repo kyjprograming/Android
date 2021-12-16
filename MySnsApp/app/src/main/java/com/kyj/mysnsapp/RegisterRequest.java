@@ -14,7 +14,7 @@ public class RegisterRequest extends StringRequest {
     private Map<String, String> map;
 
 
-    public RegisterRequest(String UserID, String UserPwd, String UserName, String UserProfillname, Response.Listener<String> listener) {
+    public RegisterRequest(String UserID, String UserPwd, String UserName, int UserProfillname, Response.Listener<String> listener) {
         super(Method.POST, URL, listener, null);
 
         map = new HashMap<>();

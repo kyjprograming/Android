@@ -19,8 +19,8 @@ import org.json.JSONObject;
 
 public class RegisterActivity extends AppCompatActivity {
 
-    private EditText et_id, et_pwd, et_name, et_profillname;
-    private Button btn_register;
+    private EditText et_id, et_pwd, et_name, et_age;
+    private Button btn_register,go_login;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) { // 액티비티 시작시 처음으로 실행되는 생명주기!
@@ -31,8 +31,8 @@ public class RegisterActivity extends AppCompatActivity {
         et_id = findViewById(R.id.et_id);
         et_pwd = findViewById(R.id.et_pwd);
         et_name = findViewById(R.id.et_name);
-        et_profillname = findViewById(R.id.et_profillname);
-
+        et_age = findViewById(R.id.et_age);
+        go_login = findViewById(R.id.go_login);
         // 회원가입 버튼 클릭 시 수행
         btn_register = findViewById(R.id.btn_register);
         btn_register.setOnClickListener(new View.OnClickListener() {
@@ -42,7 +42,7 @@ public class RegisterActivity extends AppCompatActivity {
                 String UserID = et_id.getText().toString();
                 String UserPass = et_pwd.getText().toString();
                 String UserName = et_name.getText().toString();
-                String UserProfillname = et_profillname.getText().toString();
+                int UserAge = Integer.parseInt(et_age.getText().toString());
 
                 Response.Listener<String> responseListener = new Response.Listener<String>() {
                     @Override
@@ -65,7 +65,7 @@ public class RegisterActivity extends AppCompatActivity {
                     }
                 };
                 // 서버로 Volley를 이용해서 요청을 함.
-                RegisterRequest registerRequest = new RegisterRequest(UserID,UserPass,UserName,UserProfillname, responseListener);
+                RegisterRequest registerRequest = new RegisterRequest(UserID,UserPass,UserName, UserAge, responseListener);
                 RequestQueue queue = Volley.newRequestQueue(RegisterActivity.this);
                 queue.add(registerRequest);
 

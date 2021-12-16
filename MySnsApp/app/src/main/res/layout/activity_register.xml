@@ -32,16 +32,18 @@
             android:ems="10"
             android:hint="@string/id"
             android:inputType="textPersonName"
+            android:textColor="@color/black"
             android:textSize="25sp" />
 
         <EditText
-            android:id="@+id/et_profillname"
+            android:id="@+id/et_age"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
             android:ems="10"
-            android:hint="성명"
+            android:hint="나이"
             android:inputType="textPersonName"
+            android:textColor="@color/black"
             android:textSize="25sp" />
 
         <EditText
@@ -52,6 +54,7 @@
             android:ems="10"
             android:hint="사용자 이름"
             android:inputType="textPersonName"
+            android:textColor="@color/black"
             android:textSize="25sp" />
 
         <EditText
@@ -62,6 +65,7 @@
             android:ems="10"
             android:hint="@string/pwd"
             android:inputType="textPersonName"
+            android:textColor="@color/black"
             android:textSize="25sp" />
 
         <Button
