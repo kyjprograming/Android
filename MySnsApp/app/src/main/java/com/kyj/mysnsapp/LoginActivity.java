@@ -49,7 +49,7 @@ public class LoginActivity extends AppCompatActivity {
                 String userID = et_id.getText().toString();
                 String userPass = et_pwd.getText().toString();
                 Intent intent = new Intent(LoginActivity.this, ContentActivity.class);
-                /*Response.Listener<String> responseListener = new Response.Listener<String>() {
+                Response.Listener<String> responseListener = new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
                         try {
@@ -77,7 +77,7 @@ public class LoginActivity extends AppCompatActivity {
                 };
                 LoginRequest loginRequest = new LoginRequest(userID, userPass, responseListener);
                 RequestQueue queue = Volley.newRequestQueue(LoginActivity.this);
-                queue.add(loginRequest);*/
+                queue.add(loginRequest);
             }
         });
 
