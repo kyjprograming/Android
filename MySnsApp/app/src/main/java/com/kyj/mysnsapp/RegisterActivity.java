@@ -34,6 +34,13 @@ public class RegisterActivity extends AppCompatActivity {
         et_age = findViewById(R.id.et_age);
         go_login = findViewById(R.id.go_login);
         // 회원가입 버튼 클릭 시 수행
+        go_login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
+                startActivity(intent);
+            }
+        });
         btn_register = findViewById(R.id.btn_register);
         btn_register.setOnClickListener(new View.OnClickListener() {
             @Override

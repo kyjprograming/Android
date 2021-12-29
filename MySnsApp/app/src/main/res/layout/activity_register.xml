@@ -12,9 +12,10 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="100dp"
+        android:fontFamily="cursive"
         android:text="@string/app_name"
         android:textAlignment="center"
-        android:textSize="40sp" />
+        android:textSize="60sp" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -29,9 +30,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
+            android:background="@drawable/text_border"
             android:ems="10"
             android:hint="@string/id"
             android:inputType="textPersonName"
+            android:padding="10dp"
             android:textColor="@color/black"
             android:textSize="25sp" />
 
@@ -40,9 +43,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
+            android:background="@drawable/text_border"
             android:ems="10"
             android:hint="나이"
             android:inputType="textPersonName"
+            android:padding="10dp"
             android:textColor="@color/black"
             android:textSize="25sp" />
 
@@ -51,9 +56,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
+            android:background="@drawable/text_border"
             android:ems="10"
             android:hint="사용자 이름"
             android:inputType="textPersonName"
+            android:padding="10dp"
             android:textColor="@color/black"
             android:textSize="25sp" />
 
@@ -62,9 +69,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
+            android:background="@drawable/text_border"
             android:ems="10"
             android:hint="@string/pwd"
             android:inputType="textPersonName"
+            android:padding="10dp"
             android:textColor="@color/black"
             android:textSize="25sp" />
 
@@ -73,8 +82,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:backgroundTint="@color/purple_200"
-            android:text="Button" />
+            android:backgroundTint="#811E90FF"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/register"
+            android:textSize="20sp" />
 
         <LinearLayout
             android:layout_width="wrap_content"
