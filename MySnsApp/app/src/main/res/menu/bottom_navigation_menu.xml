@@ -3,20 +3,24 @@
 
     <item
         android:id="@+id/home"
-        android:title="home"
+        android:title="홈"
         android:icon="@drawable/ic_home"/>
     <item
         android:id="@+id/search"
-        android:title="search"
+        android:title="검색"
         android:icon="@drawable/ic_search"
         />
     <item
         android:id="@+id/upload"
-        android:title="upload"
+        android:title="업로드"
         android:icon="@drawable/ic_upload"/>
     <item
+        android:id="@+id/favorite"
+        android:title="좋아요"
+        android:icon="@drawable/ic_favorite"/>
+    <item
         android:id="@+id/profile"
-        android:title="profile"
+        android:title="프로플"
         android:icon="@drawable/ic_profile"/>
 
 </menu>

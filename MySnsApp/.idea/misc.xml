@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/MySnsApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.23020833333333332" />
+        <entry key="..\:/MySnsApp/app/src/main/res/drawable/ic_search.xml" value="0.23020833333333332" />
         <entry key="..\:/MySnsApp/app/src/main/res/drawable/text_border.xml" value="0.19166666666666668" />
         <entry key="..\:/MySnsApp/app/src/main/res/layout/activity_content.xml" value="0.25" />
         <entry key="..\:/MySnsApp/app/src/main/res/layout/activity_login.xml" value="0.25" />
