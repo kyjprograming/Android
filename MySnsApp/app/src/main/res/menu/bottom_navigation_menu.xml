@@ -6,12 +6,17 @@
         android:title="home"
         android:icon="@drawable/ic_home"/>
     <item
+        android:id="@+id/search"
+        android:title="search"
+        android:icon="@drawable/ic_search"
+        />
+    <item
         android:id="@+id/upload"
         android:title="upload"
         android:icon="@drawable/ic_upload"/>
     <item
         android:id="@+id/profile"
-        android:title="porfile"
+        android:title="profile"
         android:icon="@drawable/ic_profile"/>
 
 </menu>
