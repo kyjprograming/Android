@@ -1,0 +1,5 @@
+로그인
+curl -X POST http://127.0.0.1/login.php -H 'Content-Type: application/json' -d "userID=123&userPassword=1234"
+
+가입
+curl -X POST http://127.0.0.1/Register.php -H 'Content-Type: application/json' -d "userID=123&userPassword=123&userName=123&userAge=123"

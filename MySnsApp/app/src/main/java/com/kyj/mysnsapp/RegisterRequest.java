@@ -10,7 +10,7 @@ import java.util.Map;
 public class RegisterRequest extends StringRequest {
 
     // 서버 URL 설정 ( PHP 파일 연동 )
-    final static private String URL = "https://110.14.3.208/Register.php";
+    final static private String URL = "http://110.14.3.208/Register.php";
     private Map<String, String> map;
 
 
@@ -22,6 +22,13 @@ public class RegisterRequest extends StringRequest {
         map.put("UserPwd", userPassword);
         map.put("UserName", userName);
         map.put("UserAge", userAge + "");
+
+        /*
+            $userID = $_POST["userID"];
+            $userPassword = $_POST["userPassword"];
+            $userName = $_POST["userName"];
+            $userAge = $_POST["userAge"];
+         */
     }
 
     @Override
