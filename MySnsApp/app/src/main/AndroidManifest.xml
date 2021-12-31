@@ -13,11 +13,16 @@
         android:theme="@style/Theme.MySnsApp"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".ContentActivity"
-            android:exported="true">
-        </activity>
+            android:name=".FavoriteListActivity"
+            android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".UploadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MessageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ContentActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,8 +31,11 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
             android:name=".RegisterActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
 
         <meta-data
             android:name="preloaded_fonts"

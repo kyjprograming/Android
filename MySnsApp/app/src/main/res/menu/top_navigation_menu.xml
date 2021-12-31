@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_upload"
+        android:title="업로드"
+        android:icon="@drawable/ic_upload"
+        />
+    <item
+        android:id="@+id/action_favorite_list"
+        android:title="하트목록"
+        android:icon="@drawable/ic_favorite"
+        />
+    <item
+        android:id="@+id/action_message"
+        android:title="메세지"
+        android:icon="@drawable/ic_send"
+        />
+</menu>
