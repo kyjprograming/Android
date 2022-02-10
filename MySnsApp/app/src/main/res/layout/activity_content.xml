@@ -17,7 +17,6 @@
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginRight="60dp"
             android:fontFamily="cursive"
             android:gravity="center_vertical"
             android:paddingLeft="20dp"
@@ -33,7 +32,9 @@
             android:background="@color/white"
             app:itemIconTint="@color/colorPrimary"
             app:itemTextColor="@color/colorPrimary"
-            app:menu="@menu/top_navigation_menu" />
+            app:menu="@menu/top_navigation_menu" >
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
 
     </LinearLayout>
 

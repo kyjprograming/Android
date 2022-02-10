@@ -21,13 +21,6 @@ public class RegisterRequest extends StringRequest {
         map.put("UserPwd", userPassword);
         map.put("UserName", userName);
         map.put("UserAge", userAge + "");
-
-        /*
-            $userID = $_POST["userID"];
-            $userPassword = $_POST["userPassword"];
-            $userName = $_POST["userName"];
-            $userAge = $_POST["userAge"];
-         */
     }
 
     @Override
